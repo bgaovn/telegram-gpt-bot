@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-gpt-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8061838934:AAEQKkPJbhcHMFhqVRVAEXEI3s8fgqkdX9Y
+      - key: OPENAI_API_KEY
+        value: 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
+      - key: BOT_USERNAME
+        value: "@nhathongthaibot"
